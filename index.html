@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>flexbox-test</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+
+	<header class="main-header">
+		<h1 class="name"><a href="#">flexbox-test</a></h1>
+		<ul class="main-nav">
+			<li><a href="#">Flex Direction</a></li>
+			<li><a href="#">flex-wrap</a></li>
+			<li><a href="#">flex-flow</a></li>
+            <li><a href="#">justify-content</a></li>
+            <li><a href="#">align-items</a></li>
+            <li><a href="#">align-contant</a></li>
+		</ul>
+	</header><!--/.main-header-->   
+
+	<div class="banner">
+		<img class="logo" src="img/logo.jpg" alt="City">
+		<h1 class="headline">flexbox tutorial</h1>
+		<span class="tagline">Properties for Parent & Properties for Children</span>
+	</div><!--/.banner-->
+  
+	<div class="row">
+		<div class="primary col">
+			<h2>flex-direction</h2>
+			<p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</p>
+			<a class="button" href="#">Learn More</a>
+		</div><!--/.primary-->
+		
+		<div class="secondary col">
+			<h2>flex-wrap</h2>
+			<p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</p>
+			<a class="button" href="#">Learn More</a>
+		</div><!--/.secondary-->
+			
+		<div class="tertiary col">
+			<h2>flex-flow</h2>
+			<p>This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.</p>
+			<a class="button" href="#">Learn More</a>
+        </div><!--/.tertiary-->	
+    </div>
+    <div class="row">
+        <div class="fourth col">
+			<h2>justify-content</h2>
+			<p>This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.</p>
+			<a class="button" href="#">Learn More</a>
+        </div><!--/.fourth-->
+        
+        <div class="fifth col">
+			<h2>align-items</h2>
+			<p>This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).</p>
+			<a class="button" href="#">Learn More</a>
+        </div><!--/.fifth-->
+        
+        <div class="sixth col">
+			<h2>align-content</h2>
+			<p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis. Note: this property has no effect when there is only one line of flex items.</p>
+			<a class="button" href="#">Learn More</a>
+		</div><!--/.sixth-->
+    </div>
+	
+	<footer class="main-footer">
+		<span class="footer-span">Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items).</span>
+	</footer>
+	
+</body>
+</html>
