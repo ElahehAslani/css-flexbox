@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw; /* سه مقدار میگیرد برای سه ویژگی متفاوت به ترتیب اعمال میشود*/
+  }
+  #main > nav {
+    background: #aecae4c4;
+    order: 3;
+  }
+  #main > aside {
+    background: rgb(153, 153, 197);
+    order: 2;
+  }
+  header, footer {
+    background: rgb(127, 123, 146);
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
