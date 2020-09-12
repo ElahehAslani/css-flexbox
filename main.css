@@ -156,6 +156,12 @@ img {
 		display: flex;
 		flex-direction: column;
 	}
+
+	.button {
+		margin-top: auto;
+		align-self: flex-end; 
+	}
+
 }
 
 @media (min-width: 1025px) {
